@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pizza Order</title>
+    <title>Easy Pizza</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,29 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body onload="createDetails()">
-    <div class="row">
-        <div class="col" style="background-image:image()">
-
+    <div class="row" style="background-image: url(image/pb2.jpg);height: 250px;" >
+        <div class="col" style="background-image:image();">
             <nav class="navbar navbar-expand-lg navbar-light" >
-                <div class="collapse navbar-collapse" id="navbarNav" style="background-color: brown">
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" onclick="createDetails()">Home <span class="sr-only">(current)</span></a>
+                <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #030022;height: 60px;;">
+                    <ul class="navbar-nav" style="margin-left: 20%;">
+                    <li class="nav-item active" >
+                        <a class="nav-link" href="#" onclick="createDetails()" style="color: white;margin-left:20px">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#" style="color: white; margin-left:20px">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#" style="color: white;margin-left:20px">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#" style="color: white;margin-left:20px">Offers</a>
                     </li>
                     </ul>
+                    <button type="button" class="btn btn-outline-light" style="float: right;margin-left: 300px">Sign In / Log In</button>
                 </div>
             </nav>
         </div>
     </div>
+    <br>
     <!--  -->
     <!--  -->
 
@@ -39,7 +40,7 @@
 
     <!--  -->
     <!--  -->
-        <div class="fotter" style="background-color: #1a000d;color: white">
+        <div class="fotter" style="background-color: #030022;color: white">
             <div class="row" style="padding-top: 50px;margin-top: 20px">
                 <div class="col-3 text-center" >
                     <h5>About</h5>
@@ -63,13 +64,19 @@
                     <a href="" target="" title="">
                         <i class="fa fa-twitter animated bounceIn" style="background-color: white;color: #3b5998;width: 50px;height: 50px;font-size: 40px;margin-top: 10px"></i>
                     </a>
+                    <br><br>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+1 555 555 555</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="text-center" style="margin-bottom: 50px;">copy right</p>
+                    <p class="footer-company-name text-center" style="margin-bottom: 50px;">Easy Pizza &copy; 2019</p>
                 </div>
             </div>
+            
         </div>
     <script>
         var details = document.getElementById("middle");
