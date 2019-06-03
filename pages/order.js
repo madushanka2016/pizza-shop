@@ -11,8 +11,17 @@ function createOrder(){
             <div class="row text-center">
                 <div class="col">
                     <h3 style="margin:20px 0px 30px 0px;">RS. 500.00</h3>
-                    <button class="btn btn-outline-primary">Self Collect</button>
-                    <button class="btn btn-outline-primary">Delivery</button>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="">Quantity</label>
+                        </div>
+                        <div class="col-7">
+                            <input class="form-control form-control-sm" type="number">
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn btn-outline-primary" onclick="createDelivery()">Self Collect</button>
+                    <button class="btn btn-outline-primary" onclick="createDelivery()">Delivery</button>
                 </div>
                 <div class="col">
                     <img src="image/po1.jpg" alt="" style="margin-bottom: 20px">
